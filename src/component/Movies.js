@@ -1,11 +1,3 @@
-import React, {Component} from "react";
-
-class Movies extends Component {
-    render() {
-        return (
-            <div>Movies!</div>
-        )
-    }
-}
+const Movies = props => props.movie.attributes.Title;
 
 export default Movies;
