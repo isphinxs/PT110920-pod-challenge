@@ -7,8 +7,7 @@ class MoviesContainer extends Component {
     }
 
     componentDidMount() {
-        // change default port on api to 3001
-        fetch("http://localhost:3001/movies")
+        fetch("http://localhost:3000/movies")
             .then(resp => resp.json())
             .then(movies => {
                 this.setState({movies: movies.data});
