@@ -1,0 +1,284 @@
+ul {
+    position: fixed;
+    list-style-type: none;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+li {
+    float: left;
+}
+
+#searchButton {
+    float: right;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#searchButton:hover {
+    background-color: gray;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: gray;
+}
+
+.component {
+    padding: 3%;
+    text-align: center;
+}
+
+*,*:after,*:before {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+  
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+  
+body {
+    background: #3aaae8;
+    color: #fff;
+    font:12px/18px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+ 
+a,a:visited {
+    color:#fff
+}
+  
+.searchform {
+    background:#f4f4f4;
+    background:rgba(244,244,244,.79);
+    border: 1px solid #d3d3d3;
+    left: 50%;
+    padding: 2px 5px;
+    position: absolute;
+    margin: -22px 0 0 -170px;
+    top: 50%;
+    width:339px;
+    box-shadow:0 4px 9px rgba(0,0,0,.37);
+    -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
+    -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+  
+.searchform input, .searchform button {
+    float: left
+}
+  
+.searchform input {
+    background:#fefefe;
+    border: none;
+    font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin-right: 5px;
+    padding: 10px;
+    width: 216px;
+    box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px
+}
+      
+.searchform input:focus {
+    outline: none;
+    box-shadow:0 0 4px #0d76be inset;
+    -moz-box-shadow:0 0 4px #0d76be inset;
+    -webkit-box-shadow:0 0 4px #0d76be inset;
+}
+      
+.searchform input::-webkit-input-placeholder {
+    font-style: italic;
+    line-height: 15px
+}
+  
+.searchform input:-moz-placeholder {
+    font-style: italic;
+    line-height: 15px
+}
+  
+.searchform button {
+    background: rgb(52,173,236);
+    background: -moz-linear-gradient(top, rgba(52,173,236,1) 0%, rgba(38,145,220,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,173,236,1)), color-stop(100%,rgba(38,145,220,1)));
+    background: -webkit-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: -o-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: -ms-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: linear-gradient(to bottom, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc',GradientType=0 );
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    width:106px;
+    box-shadow: 0 0 2px #2692dd inset;
+    -moz-box-shadow: 0 0 2px #2692dd inset;
+    -webkit-box-shadow: 0 0 2px #2692dd inset;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+}
+
+.searchform button:hover {
+    opacity:.9;
+}
+
+.movieComponent {
+    margin: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.movieComponent img {
+    border-width: thick;
+    border: 10px solid black;
+    padding: 5px;
+}
+
+.errorMessage {
+    margin: auto;
+    padding: 10%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    padding-top: 5%;
+}
+
+.column img {
+    border-width: thick;
+    border: 10px solid black;
+    padding: 5px;
+}
+
+#imageLeft {
+    text-align: right;
+}
+
+#textRight {
+    text-align: left;
+    padding-left: 3%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px gray;
+}
+  
+.button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+  
+.button:active {
+    background-color: whitesmoke;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.reviewForm {
+    color: black;
+    background:#f4f4f4;
+    background:rgba(244,244,244,.79);
+    border: 1px solid #d3d3d3;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    margin: -22px 0 0 -170px;
+    text-align: center;
+    top: 50%;
+    width:339px;
+    box-shadow:0 4px 9px rgba(0,0,0,.37);
+    -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
+    -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+.addReviewForm {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.addReviewForm input {
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    width: 25%;
+}
+  
