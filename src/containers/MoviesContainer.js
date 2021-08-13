@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import Movies from '../components/Movies'
+import React, {Component} from "react";
+import Movies from "../components/Movies";
 
 class MoviesContainer extends Component {
     state = {
@@ -20,7 +20,7 @@ class MoviesContainer extends Component {
         return (
             <div>
                 <h1>Movies Container</h1>
-                {movies ? movies.map(movie => <Movies movie={movie}/>) : "Loading"}
+                {movies ? movies.map(movie => <Movies key={movie.id} movie={movie}/>) : "Loading"}
             </div>   
         );
     }
