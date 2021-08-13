@@ -1,5 +1,4 @@
 import './App.css';
-<<<<<<< HEAD
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import PodChallenge from './component/PodChallenge';
@@ -55,18 +54,6 @@ class App extends Component {
       </Router>  
     );
   }
-=======
-import PodChallenge from './component/PodChallenge';
-import MoviesContainer from './containers/MoviesContainer';
-
-function App() {
-  return (
-    <div>
-      <PodChallenge />
-      <MoviesContainer />
-    </div>
-  );
->>>>>>> b301ab5b150c6f1b86995018519d66a0a8225abe
 }
 
 export default App;
